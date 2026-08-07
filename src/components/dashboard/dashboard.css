@@ -1,0 +1,104 @@
+
+
+#dashboard {
+  width: 95%;
+  max-width: 1400px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+
+#dashboard aside {
+  width: 22%;
+  background: #161b22;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #30363d;
+  color: white;
+  min-height: 500px;
+}
+
+#dashboard main {
+  width: 56%;
+  background: #161b22;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #30363d;
+}
+
+#dashboard h2,
+#dashboard h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+#search {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#search input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+  background: #0d1117;
+  color: white;
+  font-size: 15px;
+  outline: none;
+}
+
+#search input:focus {
+  border-color: #58a6ff;
+}
+
+#dashboard aside div,
+#dashboard main > div:not(#search) {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+#dashboard aside div:hover,
+#dashboard main > div:not(#search):hover {
+  transform: translateY(-3px);
+  border-color: #58a6ff;
+}
+
+#dashboard h4 {
+  color: white;
+  margin: 5px 0;
+}
+
+#dashboard p,
+#dashboard li {
+  color: #c9d1d9;
+}
+
+#dashboard ul {
+  padding-left: 20px;
+}
+
+#dashboard button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #238636;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#dashboard button:hover {
+  background: #2ea043;
+  transform: scale(1.03);
+}

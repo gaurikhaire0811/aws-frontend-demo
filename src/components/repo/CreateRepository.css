@@ -1,0 +1,105 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0d1117;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.create-repo-container {
+  min-height: calc(100vh - 80px);
+  background: #0d1117;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.create-repo-card {
+  width: 100%;
+  max-width: 650px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 35px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.create-repo-card h1 {
+  text-align: center;
+  color: #f0f6fc;
+  margin-bottom: 30px;
+  font-size: 45px;
+}
+
+.create-repo-card label {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 20px;
+  color: #c9d1d9;
+  font-weight: 600;
+}
+
+.create-repo-card input,
+.create-repo-card textarea,
+.create-repo-card select {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+  background: #0d1117;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.create-repo-card textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.create-repo-card input:focus,
+.create-repo-card textarea:focus,
+.create-repo-card select:focus {
+  border-color: #58a6ff;
+  box-shadow: 0 0 8px rgba(88,166,255,.4);
+}
+
+.create-repo-card button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px;
+  background: #238636;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.create-repo-card button:hover {
+  background: #2ea043;
+}
+
+.create-repo-card button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+@media (max-width:768px) {
+  .create-repo-card {
+    padding: 25px;
+  }
+
+  .create-repo-card h1 {
+    font-size: 34px;
+  }
+}
