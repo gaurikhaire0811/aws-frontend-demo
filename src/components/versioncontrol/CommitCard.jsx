@@ -9,7 +9,7 @@ const CommitCard = ({ commit }) => {
   const viewFiles = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:3002/version/files/${commit.commitID}`
+        `http://16.170.8.203:3002/version/files/${commit.commitID}`
       );
 
       setFiles(res.data.files);
@@ -22,7 +22,7 @@ const CommitCard = ({ commit }) => {
   const revertCommit = async () => {
     try {
       const res = await axios.post(
-        `http://localhost:3002/version/revert/${commit.commitID}`
+        `http://16.170.8.203:3002/version/revert/${commit.commitID}`
       );
 
       alert(res.data.message);
