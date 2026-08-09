@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:3002/version";
+const BASE_URL = "http://16.170.8.203:3002/version";
 
 // Get all commits
 export const getCommitHistory = async () => {
