@@ -31,7 +31,7 @@ const CreateRepository = () => {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:3002/repo/create",
+        "http://16.170.8.203:3002/repo/create",
         {
           method: "POST",
           headers: {
