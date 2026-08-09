@@ -15,7 +15,7 @@ const VersionControl = () => {
     const fetchHistory = async () => {
         try {
             const res = await axios.get(
-                "http://localhost:3002/version/history"
+                "http://16.170.8.203:3002/version/history"
             );
 
             setCommits(res.data.commits);
